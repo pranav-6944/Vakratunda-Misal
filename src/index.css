@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-parchment: #FAF6EE;
+    --color-saffron: #D9531E;
+    --color-chili: #B91C1C;
+    --color-terracotta: #2E1C14;
+    --color-turmeric: #EAB308;
+    --color-coriander: #2D5A27;
+  }
+
+  html {
+    background-color: #FAF6EE;
+    color: #2E1C14;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF6EE;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D5BEA8;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D9531E;
+  }
+}
+
+/* Subtle parchment grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(46, 28, 20, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Subtle dark grain for dark sections */
+.bg-grain-dark {
+  background-image: radial-gradient(rgba(245, 239, 235, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom Devanagari headline styling */
+.marathi-headline {
+  font-family: 'Rozha One', 'Noto Sans Devanagari', serif;
+  letter-spacing: -0.01em;
+}
+
+.marathi-body {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.serif-headline {
+  font-family: 'DM Serif Display', 'Playfair Display', serif;
+}
+
+/* Steam particle simulation */
+@keyframes steamDrift {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.55;
+  }
+  60% {
+    transform: translateY(-50px) translateX(12px) scale(1.4);
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(-110px) translateX(25px) scale(2.2);
+    opacity: 0;
+  }
+}
+
+.steam-particle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(14px);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 240, 220, 0.15) 70%, transparent 100%);
+  animation: steamDrift 4.5s ease-out infinite;
+  pointer-events: none;
+}
+
+/* Food badge glow */
+.glow-saffron {
+  box-shadow: 0 0 45px -5px rgba(217, 83, 30, 0.35);
+}
+
+.glow-chili {
+  box-shadow: 0 0 50px -5px rgba(185, 28, 28, 0.45);
+}
+
+/* Custom cursor hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor-element {
+    display: none !important;
+  }
+}
+
+/* Hide scrollbar for clean horizontal menus */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
