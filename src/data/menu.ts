@@ -314,6 +314,7 @@ export const menuItems: MenuItem[] = [
     price: 20,
     category: 'chai',
     description: 'Soothing detox cup with mountain green tea leaves.',
+    image: '/images/Refreshing-Green-Tea.png',
     isVegetarian: true
   },
   {
@@ -323,6 +324,7 @@ export const menuItems: MenuItem[] = [
     price: 20,
     category: 'chai',
     description: 'Light, crisp black tea with a squeeze of fresh Pune lemon.',
+    image: '/images/Lemon-Black-Tea.png',
     isVegetarian: true
   },
   {
@@ -332,6 +334,7 @@ export const menuItems: MenuItem[] = [
     price: 25,
     category: 'chai',
     description: 'Frothy hot coffee whipped with creamy milk and rich roasted beans.',
+    image: '/images/Special-Hot-Coffee.png',
     isVegetarian: true
   },
   {
@@ -376,6 +379,7 @@ export const menuItems: MenuItem[] = [
     price: 15,
     category: 'extras',
     description: 'Freshly baked soft, pillowy Indian bread straight from the local Alandi bakery.',
+    image: '/images/Extra-Pav-Jodi.png',
     isVegetarian: true
   },
   {
