@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Package, ShieldCheck, Flame, MessageCircle, Phone, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Package, ShieldCheck, Flame, MessageCircle, Phone, Sparkles, CheckCircle2, Zap } from 'lucide-react';
 import { restaurantInfo } from '../../data/restaurant';
 
 export const ParcelFeature: React.FC = () => {
@@ -107,8 +107,8 @@ export const ParcelFeature: React.FC = () => {
               </div>
 
               <div className="pt-2 border-t border-terracotta-border/50 text-[11px] text-parchment-400 flex items-center justify-between">
-                <span>⚡ Ready in 10–15 mins</span>
-                <span>📦 Bulk Yatra orders accepted</span>
+                <span className="flex items-center gap-1"><Zap className="w-4 h-4 text-saffron" /> Ready in 10–15 mins</span>
+                <span className="flex items-center gap-2"><Package className="w-5 h-5 text-saffron" /> Bulk Yatra orders accepted</span>
               </div>
             </div>
           </div>

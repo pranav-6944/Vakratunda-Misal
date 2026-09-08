@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin, Clock, Navigation, CheckCircle, ExternalLink, Calendar } from 'lucide-react';
+import { Phone, MapPin, Clock, Navigation, CheckCircle, ExternalLink, Calendar, MessageCircle } from 'lucide-react';
 import { restaurantInfo } from '../../data/restaurant';
 import { getRestaurantStatus } from '../../utils/status';
 
@@ -143,7 +143,7 @@ export const LocationSection: React.FC = () => {
                 className="flex-1 py-3 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 transition-all"
                 data-cursor="ORDER"
               >
-                <span className="text-base">💬</span>
+                <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp Order</span>
               </a>
 

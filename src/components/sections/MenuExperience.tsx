@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Smartphone } from 'lucide-react';
 
 export const MenuExperience: React.FC = () => {
   return (
@@ -36,7 +37,7 @@ export const MenuExperience: React.FC = () => {
             to="/menu"
             className="px-8 py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg sm:text-xl shadow-lg transition-all transform hover:-translate-y-1 active:translate-y-0 flex items-center gap-3"
           >
-            <span>📱</span>
+            <Smartphone className="w-5 h-5" />
             <span>Order via WhatsApp</span>
           </Link>
         </div>

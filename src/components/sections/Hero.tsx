@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowDown, Flame, MapPin, Sparkles, Utensils } from 'lucide-react';
+import { ArrowDown, Flame, MapPin, Sparkles, Utensils, MessageCircle } from 'lucide-react';
 import { SteamEffect } from '../ui/SteamEffect';
 import { restaurantInfo } from '../../data/restaurant';
 
@@ -162,7 +162,7 @@ export const Hero: React.FC = () => {
                 className="px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
                 data-cursor="WHATSAPP"
               >
-                <span className="text-lg">💬</span>
+                <MessageCircle className="w-5 h-5" />
                 <span>WhatsApp Order / पार्सल</span>
               </a>
 
