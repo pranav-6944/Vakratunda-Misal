@@ -143,4 +143,4 @@
 - **Dev Server**: Running at `http://localhost:3000/`.
 - **Assets Serving**: Verified `public/images/Misal1.png` (1.54 MB) and all dish photography displayed without cropping.
 -   0 9 - 0 8 - 2 0 2 6 :   I n t e g r a t e d   7   n e w   i n t e r a c t i v e   a n a t o m y   i m a g e s   i n t o   M i s a l E x p l o s i o n   c o m p o n e n t   ( A n a t o m y - * . p n g ) .   A d d e d   a   C o m p l e t e   D i s h   b u t t o n   t o   r e s e t   t h e   v i e w   t o   A n a t o m y - A l l . p n g .  
- 
+ - **Git Workflow**: ALWAYS commit and push code to the repository automatically after making meaningful changes. Do not wait for explicit instruction to push.
