@@ -218,6 +218,7 @@ export const menuItems: MenuItem[] = [
     price: 40,
     category: 'maggi',
     description: 'Quick comforting bowl of noodles cooked to perfection with aromatic tastemaker.',
+    image: '/images/Special-Plain-Maggi.png',
     spiceLevel: 1,
     isVegetarian: true
   },
@@ -344,6 +345,7 @@ export const menuItems: MenuItem[] = [
     price: 25,
     category: 'chai',
     description: 'Pure bold espresso brew for an instant kick.',
+    image: '/images/Special-Black-Coffee.png',
     isVegetarian: true
   },
 
